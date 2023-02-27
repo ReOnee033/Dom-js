@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="fruits">
+    <h1>Our Products</h1>
+    <ul>
+         <li class="li">Fruits</li>
+         <li class="li">Vegetables</li>
+         <li class="li">Dried Fruits</li>
+         <li class="li">Dried Vegetables </li>
+    </ul>
+    <div class="main">
+        <div class="box">
+            <img id="img1" style="width: 100%; height: 100%; padding: 1%; " src="fruits/rich may peach .png">
+        </div>
+        <div class="box">
+            <img id="img2" style="width: 100%; height: 100%; padding: 1%;" src="fruits/summer sweet peach.png" alt="">
+        </div>
+        <div class="box">
+            <img id="img3" style="width: 100%; height: 100%; padding: 1%;" src="fruits/white-peach .png" alt="">
+        </div>
+        <div class="box">
+            <img id="img4" style="width: 100%; height: 100%; padding: 1%;" src="fruits/peach flat.png">
+        </div>
+     </div>
+
+    </section>    
+
+     <script>
+        let i, list=document.getElementsByClassName("li");
+        let shekil1=document.getElementById("img1")
+        let shekil2=document.getElementById("img2")
+        let shekil3=document.getElementById("img3")
+        let shekil4=document.getElementById("img4")
+
+        // console.log(list.length);
+        for(i=list.length-1;i>=0;i--){
+            list[i].addEventListener("click",function(){
+            })
+            } 
+            list[0].addEventListener("click",function(){
+                shekil1.src="fruits/rich may peach .png"
+                shekil2.src="fruits/summer sweet peach.png"
+                shekil3.src="fruits/white-peach .png"
+                shekil4.src="fruits/peach flat.png"
+            })
+            
+            list[1].addEventListener("click",function(){
+                shekil1.src="vegetables/Icontomato4733.jpg"
+                shekil2.src="vegetables/IconBasilica2159.jpg"
+                shekil3.src="vegetables/IconGarlic460.jpg"
+                shekil4.src="vegetables/IconDill152.jpg"
+            })
+
+            list[2].addEventListener("click",function(){
+                shekil1.src="quru/IconDried apricot218.jpg"
+                shekil2.src="quru/IconNutt2432.jpg"
+                shekil3.src="quru/IconWalnut2552.jpg"
+                shekil4.src="quru/Icondried apple3124.jpg"
+            })
+
+            list[3].addEventListener("click",function(){
+                shekil1.src="narkotik/Icondried spinach3521.jpg"
+                shekil2.src="narkotik/Icondried dill2726.jpg"
+                shekil3.src="narkotik/Icondried mint324.jpg"
+                shekil4.src="narkotik/Icondried parsley2843.jpg"
+            })
+            
+        
+     </script>
+     <!-- "https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature.jpg?sfvrsn=64942d53_4" -->
+    
+</body>
+</html>
